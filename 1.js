@@ -1,5 +1,3 @@
-454545
-结合地方撒
-圣诞节发货
-sdhfjksd
-ksdjf 
+console.log("Hello, world!");
+arr=[1,2,3,4,5];
+console.log(arr);
