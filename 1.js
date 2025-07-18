@@ -92,7 +92,7 @@ function demo_pro() {
     //     // 把结果返回给brr数组
     // }, "");
     // reduce() 对数组进行累加，返回累加后的结果 
-    
+
     let brr1 = arr.reduce(function (acc, cur, index, arr) {
         // 执行语句
         //	console.log(acc,cur,index,arr);
@@ -100,8 +100,8 @@ function demo_pro() {
         console.log(cur);
         return acc + cur;
     }, 0);
-    // console.log(brr1);
 }
+// 外部调用 demo_pro()函数，输出结果
 console.log(demo_pro());
 
 
