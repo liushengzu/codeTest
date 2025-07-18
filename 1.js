@@ -48,19 +48,28 @@ let dataNew=dayjs().month(6).date(18).locale('zh-cn').format('YYYY年M月D日');
 console.log(dataNew);
 
 
-function Test()
-{
-	// 定义一个wps范围对象
-let rng_Obj=Range("a1").CurrentRegion
-	// 定义一个数组
-let arr= rng_Obj.Value();
-	// 遍历行数组	
-arr.forEach((row,row_Index)=>{ // 第一次row=[12,12,13,14,15,16] row_Index=0
-    // 遍历行数组的列
-row.forEach(
-	(cell_Val,col_Index)=>{ // 第一次cell_Val=12,col_Index=0
-    // 打印输出元素
-	console.log(`第${row_Index+1}行，第${col_Index+1}列:`,cell_Val)
-			}
-			)})
-}
+/**************************** CodeGeeX Inline Diff ****************************/
+    // 定义一个名为 Test 的函数
+    function Test()
+    {
+        // 定义一个 WPS 范围对象，获取当前区域
+        // 定义一个wps范围对象
+    let rng_Obj=Range("a1").CurrentRegion
+        // 定义一个数组，获取范围对象的值
+        // 定义一个数组
+    let arr= rng_Obj.Value();
+        // 遍历行数组
+    arr.forEach((row,row_Index)=>{ // 第一次 row=[12,12,13,14,15,16] row_Index=0
+    arr.forEach((row,row_Index)=>{ // 第一次row=[12,12,13,14,15,16] row_Index=0
+        // 遍历行数组的列
+    row.forEach(
+        (cell_Val,col_Index)=>{ // 第一次 cell_Val=12,col_Index=0
+        // 打印输出元素及其所在的行和列
+        (cell_Val,col_Index)=>{ // 第一次cell_Val=12,col_Index=0
+        // 打印输出元素
+        console.log(`第${row_Index+1}行，第${col_Index+1}列:`,cell_Val)
+                }
+                )})
+                
+    }
+/******************** f8126744-7cd7-443b-876d-e9bb8340d349 ********************/
