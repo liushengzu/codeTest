@@ -107,39 +107,18 @@ function demo_pro() {
   }, 0);
   console.log(brr1);
 }
-// 外部调用 demo_pro()函数，输出结果
-// console.log(demo_pro());
-// // console.log(brr1);
-// console.
-// array.forEach(element => {
 
-// });
+console.log(demo_pro());
 const obj = { a: 1, b: 2, c: 3 };
 Object.keys(obj).forEach((key, index) => {
-  // key.value=value;
-  // 取key对应对象的值
-  // console.log(key,index);
   console.log(key, obj[key], index);
+  // a 1 0
+  // b 2 1
+  // c 3 2
 });
 Object.entries([1, 2, 3], [4, 5, 6]).flatMap((value) => {
   console.log(value);
 });
-
 forEach([1, 2, 3], (value, index) => {
   console.log(value, index);
 });
-
-function test() {
-let arr = [1, 2, 3, 4, 5];
-let newArr = arr.map((value, index) => {
-value = value * 2;
-return value;
-});
-let sum = newArr.reduce((acc, cur) => {
-// acc累加器 cur当前值
-return acc + cur;
-}, 0);
-console.log(sum);
-console.log(newArr);
-}
-test();

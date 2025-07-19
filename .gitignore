@@ -1,2 +1,11 @@
 说明.md
 *.md
+    "editor.fontLigatures": false,
+    "editor.fontSize":16,
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "workbench.iconTheme": "vs-minimal",
+    "editor.formatonsave": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+   "editor.formatOnSave": true,
