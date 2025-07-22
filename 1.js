@@ -1,6 +1,6 @@
 // const { values } = require("lodash");
 
-const { forEach } = require("lodash");
+// const { forEach } = require("lodash");
 
 // console.log("Hello, world!");
 // let arr = [1, 2, 3, 4, 5];
@@ -77,48 +77,49 @@ const { forEach } = require("lodash");
 // // 返回新数组
 // console.log(arr2);
 // reduce()求和
-function demo_pro() {
-  let arr = [
-    [1, 2, 3],
-    [4, 5, 5],
-    [7, 8, 9],
-  ];
-  // let brr = arr.reduce((acc, cur, index, arr) => { // acc累加器 cur当前值 index当前索引 arr数组
-  //     // 执行语句
-  //     //	console.log(acc,cur,index,arr);
-  //     console.log(acc);
-  //     console.log(cur);
-  //     //		console.log(arr[index]);0,1,2运行完成
-  //     //		console.log(arr.value2);
-  //     // 数组3个，分三次运行
-  //     // 第一次 acc=0,cur=[1,2,3]；第二次运行 acc="01,2,3"，cur=[4,5,5]，第三次acc="01,2,34,5,5"，cur=[7,8,9]
-  //     // 第四次运行 acc="01,2,34,5,57,8,9"
-  //     return acc + cur;// 第一次运行完：acc+cur= "01,2,3"，第二次运行完：acc+cur="01,2,34,5,5"，第三次运行完：acc+cur="01,2,34,5,57,8,9"
-  //     // 把结果返回给brr数组
-  // }, "");
-  // reduce() 对数组进行累加，返回累加后的结果
+// function demo_pro() {
+//   let arr = [
+//     [1, 2, 3],
+//     [4, 5, 5],
+//     [7, 8, 9],
+//   ];
+// let brr = arr.reduce((acc, cur, index, arr) => { // acc累加器 cur当前值 index当前索引 arr数组
+//     // 执行语句
+//     //	console.log(acc,cur,index,arr);
+//     console.log(acc);
+//     console.log(cur);
+//     //		console.log(arr[index]);0,1,2运行完成
+//     //		console.log(arr.value2);
+//     // 数组3个，分三次运行
+//     // 第一次 acc=0,cur=[1,2,3]；第二次运行 acc="01,2,3"，cur=[4,5,5]，第三次acc="01,2,34,5,5"，cur=[7,8,9]
+//     // 第四次运行 acc="01,2,34,5,57,8,9"
+//     return acc + cur;// 第一次运行完：acc+cur= "01,2,3"，第二次运行完：acc+cur="01,2,34,5,5"，第三次运行完：acc+cur="01,2,34,5,57,8,9"
+//     // 把结果返回给brr数组
+// }, "");
+// reduce() 对数组进行累加，返回累加后的结果
 
-  let brr1 = arr.reduce(function (acc, cur, index, arr) {
-    // 执行语句
-    //	console.log(acc,cur,index,arr);
-    // console.log(acc);
-    // console.log(cur);
-    return acc + cur;
-  }, 0);
-  console.log(brr1);
-}
+//   let brr1 = arr.reduce(function (acc, cur, index, arr) {
+//     // 执行语句
+//     //	console.log(acc,cur,index,arr);
+//     // console.log(acc);
+//     // console.log(cur);
+//     return acc + cur;
+//   }, 0);
+//   console.log(brr1);
+// }
 
-console.log(demo_pro());
-const obj = { a: 1, b: 2, c: 3 };
-Object.keys(obj).forEach((key, index) => {
-  console.log(key, obj[key], index);
-  // a 1 0
-  // b 2 1
-  // c 3 2
-});
-Object.entries([1, 2, 3], [4, 5, 6]).flatMap((value) => {
-  console.log(value);
-});
-forEach([1, 2, 3], (value, index) => {
-  console.log(value, index);
-});
+// console.log(demo_pro());
+// const obj = { a: 1, b: 2, c: 3 };
+// Object.keys(obj).forEach((key, index) => {
+//   console.log(key, obj[key], index);
+// a 1 0
+// b 2 1
+//   // c 3 2
+// });
+// Object.entries([1, 2, 3], [4, 5, 6]).flatMap((value) => {
+//   console.log(value);
+// });
+// forEach([1, 2, 3], (value, index) => {
+//   console.log(value, index);
+// });
+console.log(Math.pow(2, 3)); // 8
