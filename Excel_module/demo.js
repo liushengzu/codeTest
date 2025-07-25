@@ -1,5 +1,7 @@
 /* 计算指定单元格范围内符合条件的单元格的总和*/
 
+import { forEach } from "lodash";
+
 function sumByFillColor(sheetName, rangeAddress, targetColor) {
   try {
     // 获取指定的工作表
@@ -37,3 +39,7 @@ function demo() {
   var result = sumByFillColor(sheetName, rangeAddress, targetColor);
   alert("符合条件的单元格总和为: " + result);
 }
+let array = [1, 2, 3, 4];
+array.forEach((element) => {
+  console.log(element);
+});
