@@ -96,7 +96,7 @@
  * let wpsDoc = wpsApp.Documents.Add();
  */
 
-import { range } from "lodash";
+import { entries, range } from "lodash";
 
 /**
  * @example 示例30：在A1：K20区域的每个单元格中输入随机数（0-100）
@@ -347,8 +347,6 @@ function 批量导出图片 {
             }
         )
      }
-
-
 
     
      range("A1").CurrentRegion.Resize(2, 2).Value2 = [["a", "b"], ["c", "d"]];
