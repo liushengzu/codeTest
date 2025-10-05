@@ -3,6 +3,7 @@ let col_J = 1;
 let accumulator = arr1.reduce(
   (acc, row, r) => {
     if (r === 0) return acc;
+
     const qty = Number(row[col_J]) || 1;
     const startRow = acc.result.length + 1;
     acc.groups.push({
